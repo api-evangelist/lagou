@@ -1,0 +1,48 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of lagou.com hosts
+note: >-
+  Lagou serves a soft-404 for every unknown path — a styled HTML error page
+  (class "i_error" / blocked_404) returned with HTTP 200. Raw status codes are
+  therefore NOT a reliable signal on this domain; every probe below was verified
+  by inspecting the response body. No /.well-known/ document is published on any
+  Lagou host. Recorded so future runs do not re-probe blindly. No WellKnown or
+  SecurityTxt pointer is wired in apis.yml because nothing was found.
+hosts:
+- https://www.lagou.com
+- https://lagou.com
+- https://open.lagou.com
+- https://api.lagou.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  published: false
+  detail: soft-404 HTML error page, not RFC 9116 text
+- path: /.well-known/openid-configuration
+  status: 200
+  published: false
+  detail: soft-404 HTML error page, not JSON
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  published: false
+  detail: soft-404 HTML error page, not JSON
+- path: /.well-known/api-catalog
+  status: 200
+  published: false
+  detail: soft-404 HTML error page
+- path: /.well-known/ai-plugin.json
+  status: 200
+  published: false
+  detail: soft-404 HTML error page, not JSON
+other_probes:
+- path: /robots.txt
+  status: 200
+  published: true
+  detail: >-
+    Real robots.txt served at https://www.lagou.com/robots.txt — blocks the
+    Jobuispider user-agent entirely, and disallows query-string URLs and
+    /gongsi/v1/ for all agents.
+- path: /llms.txt
+  status: 200
+  published: false
+  detail: soft-404 HTML error page on both www.lagou.com and open.lagou.com

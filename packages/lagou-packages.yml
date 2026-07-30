@@ -1,0 +1,69 @@
+generated: '2026-07-19'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=lagou
+note: >-
+  Lagou publishes NO API client SDKs — the company operates no public API, so
+  there is nothing to write a client against. What it does publish openly are
+  front-end engineering libraries from its web team (GitHub org Lagou-Frontend,
+  created 2014). These are catalogued here for completeness and are deliberately
+  NOT wired as `type: SDKs` in apis.yml: they are UI/build tooling, not API
+  client libraries, and emitting an SDK pointer for them would misrepresent the
+  provider. PyPI, Maven Central, NuGet, pkg.go.dev, RubyGems, Packagist and
+  crates.io returned no first-party Lagou packages.
+registries_probed:
+- {registry: npm, first_party_hits: 4}
+- {registry: pypi, first_party_hits: 0}
+- {registry: maven-central, first_party_hits: 0}
+- {registry: nuget, first_party_hits: 0}
+- {registry: pkg.go.dev, first_party_hits: 0}
+- {registry: rubygems, first_party_hits: 0}
+- {registry: packagist, first_party_hits: 0}
+- {registry: crates.io, first_party_hits: 0}
+api_client_sdks: []
+packages:
+- language: javascript
+  registry: npm
+  name: normae
+  url: https://www.npmjs.com/package/normae
+  install: npm install normae
+  description: Front-end integrated solution of Lagou based on fis3.
+  repository: https://github.com/Lagou-Frontend/normae
+  version: 0.1.3
+  last_published: '2022-06-22'
+  kind: build-tooling
+  official: true
+- language: javascript
+  registry: npm
+  name: lagouui-react
+  url: https://www.npmjs.com/package/lagouui-react
+  install: npm install lagouui-react
+  description: Lagou UI components built with React.js.
+  repository: https://github.com/Lagou-Frontend/lagouui-react
+  version: 0.0.3
+  last_published: '2022-06-19'
+  kind: ui-components
+  official: true
+- language: javascript
+  registry: npm
+  name: eslint-config-lagou
+  url: https://www.npmjs.com/package/eslint-config-lagou
+  install: npm install eslint-config-lagou
+  description: Lagou ESLint configuration.
+  repository: https://github.com/guoweiTang/eslint-config-lagou
+  version: 1.0.3
+  last_published: '2023-02-09'
+  kind: lint-config
+  official: false
+  official_note: published from a personal GitHub account, not the Lagou-Frontend org
+- language: javascript
+  registry: npm
+  name: stylelint-config-lagou
+  url: https://www.npmjs.com/package/stylelint-config-lagou
+  install: npm install stylelint-config-lagou
+  description: Lagou Stylelint configuration.
+  repository: https://github.com/guoweiTang/stylelint-config-lagou
+  version: 1.0.2
+  last_published: '2023-02-09'
+  kind: lint-config
+  official: false
+  official_note: published from a personal GitHub account, not the Lagou-Frontend org
