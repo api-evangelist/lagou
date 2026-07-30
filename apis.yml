@@ -1,19 +1,52 @@
 aid: lagou
-name: lagou
-description: lagou is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Lagou
+description: >-
+  Lagou (拉勾招聘) is a Chinese online recruitment platform operated by Beijing
+  Lagou Network Technology Co., Ltd., focused on hiring for the internet and
+  technology sector. It matches software engineers, product managers, designers
+  and other digital-economy professionals with employers across major Chinese
+  cities, publishing verified job listings alongside a browseable directory of
+  hiring companies. Around the core job board it runs Lagou Enterprise
+  (easy.lagou.com) for employer-side recruiting, Lagou Campus
+  (xiaoyuan.lagou.com) for graduate hiring, and Lagou Education
+  (kaiwu.lagou.com) for professional-skills courses. Lagou was surfaced through
+  the Qiming Venture Partners portfolio. It publishes no public API, developer
+  portal or API documentation — open.lagou.com carries a "Lagou Open Platform"
+  title but serves only a stub page — so this profile captures the company's
+  public web and security surface rather than an API surface.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.lgstatic.com/lg-mobileidt-fed/images/asset/custom/list/img/download_logo_new.png
 url: https://raw.githubusercontent.com/api-evangelist/lagou/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - qiming
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: portfolio-lead-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Recruitment
+- Jobs
+- Hiring
+- Human Resources
+- Talent
+- Careers
+- Employment
+- Education
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +56,24 @@ maintainers:
 common:
 - type: Website
   url: https://lagou.com
+- type: About
+  url: https://www.lagou.com/about.html
+- type: SignUp
+  url: https://easy.lagou.com/
+- type: TermsOfService
+  url: https://www.lagou.com/privacy.html
+- type: PrivacyPolicy
+  url: https://www.lagou.com/policy.html
+- type: GitHubOrganization
+  url: https://github.com/Lagou-Frontend
+- type: Packages
+  url: packages/lagou-packages.yml
+- type: DomainSecurity
+  url: security/lagou-domain-security.yml
+- type: LLMsTxt
+  url: llms/lagou-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
