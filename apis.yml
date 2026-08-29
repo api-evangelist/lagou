@@ -14,6 +14,17 @@ description: >-
   portal or API documentation — open.lagou.com carries a "Lagou Open Platform"
   title but serves only a stub page — so this profile captures the company's
   public web and security surface rather than an API surface.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
