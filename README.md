@@ -1,4 +1,4 @@
-# Lagou (拉勾招聘)
+# Lagou
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,21 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lagou is a Chinese online recruitment platform operated by Beijing Lagou Network Technology Co., Ltd., focused on hiring for the internet and technology sector. It matches software engineers, product managers, designers and other digital-economy professionals with employers across major Chinese cities, and runs Lagou Enterprise (easy.lagou.com) for employer-side recruiting, Lagou Campus (xiaoyuan.lagou.com) for graduate hiring, and Lagou Education (kaiwu.lagou.com) for professional-skills courses.
+Lagou (拉勾招聘) is a Chinese online recruitment platform operated by Beijing Lagou Network Technology Co., Ltd., focused on hiring for the internet and technology sector. It matches software engineers, product managers, designers and other digital-economy professionals with employers across major Chinese cities, publishing verified job listings alongside a browseable directory of hiring companies. Around the core job board it runs Lagou Enterprise (easy.lagou.com) for employer-side recruiting, Lagou Campus (xiaoyuan.lagou.com) for graduate hiring, and Lagou Education (kaiwu.lagou.com) for professional-skills courses. Lagou was surfaced through the Qiming Venture Partners portfolio. It publishes no public API, developer portal or API documentation — open.lagou.com carries a "Lagou Open Platform" title but serves only a stub page — so this profile captures the company's public web and security surface rather than an API surface.
 
-Backed by: qiming — https://lagou.com
+**Areas:** Company · Recruiting · Job · Hiring · Human Resources · Talent · Careers · Employment · Education · China
 
-## API surface
+## Lagou on APIs.io
 
-Lagou publishes **no public API**, developer portal, API reference or OpenAPI description. `open.lagou.com` resolves and is titled "拉勾开放平台" (Lagou Open Platform) but serves only a truncated stub page; `api.lagou.com` returns a bare `SUCCESS` body with no documented endpoints. No SDKs, CLI, MCP server, webhooks, changelog or status page were found.
+Everything profiled for Lagou is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lagou/](https://apis.io/providers/lagou/)** — or go straight to one of the APIs or properties below.
 
-> **Probing note:** Lagou returns a styled HTML error page with **HTTP 200** for unknown paths. Status codes alone are not a reliable signal on this domain — verify response bodies.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Artifact | File | Method |
-|---|---|---|
-| Domain security | `security/lagou-domain-security.yml` | probed |
-| Well-known discovery | `well-known/lagou-well-known.yml` | probed (none published) |
-| Packages | `packages/lagou-packages.yml` | searched (front-end libs only, no API SDKs) |
-| llms.txt | `llms/lagou-llms.txt` | generated |
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lagou Domain Security](https://apis.io/security/lagou/lagou-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://lagou.com)
+- [Sign up](https://easy.lagou.com/)
+- [Terms of service](https://www.lagou.com/privacy.html)
+- [Privacy policy](https://www.lagou.com/policy.html)
+- [GitHub](https://github.com/Lagou-Frontend)
+
+## API Evangelist rating
+
+**Kin Score 11.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 34.2 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lagou/](https://apis.io/providers/lagou/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lagou: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lagou/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
